@@ -1,0 +1,98 @@
+ <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WCHS</title>
+<link href="Main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="text-align: center">
+<center><img src="WCHSsetup.jpg" width="700" height="300" alt=""/></center>
+<hgroup style="font-size: 36px; font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', sans-serif;">WCHS News</hgroup>
+<nav>
+  <ul>
+     <li>       <a href="http://www.citrus.k12.fl.us/">Citrus County Schools Home</a>     </li>
+     <li>       <a href="http://chs.citrusschools.org/">CHS Home</a>     </li>
+   </ul>
+   </nav>
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<hgroup><strong style="font-size: 18px">CHS Media Links</strong></hgroup>
+<ul>
+     <li><a href="https://twitter.com/CHSCanes" title="CHS Twitter ">CHS Twitter</a></li>
+     <li><a href="https://www.facebook.com/CHSwchsnews/">WCHS News Facebook</a></li>
+     <li><a href="https://www.instagram.com/wchsnews2017">WCHS Instagram</a></li>
+     <li><a href="UCQ8Lzvb0mSz0p5XAmZoW1zw">WCHS News Youtube</a></li>
+   </ul>
+
+
+<iframe id="youtube_video" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+
+<span style="text-align: right">
+<span style="text-align: left">
+<script>
+var channelID = "UCQ8Lzvb0mSz0p5XAmZoW1zw";
+$.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D'+channelID, function(data) {
+   var link = data.items[0].link;
+   var id = link.substr(link.indexOf("=")+1);
+    $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
+});
+</script>
+</span></span>
+ <hgroup style="font-size: 24px; font-style: normal; font-weight: bold;">CHS News Crew</hgroup>
+<table width="50%" border="1" align="center">
+  <tbody>
+    <tr>
+      <td><img src="Person1.JPG" width="80" height="107" alt=""/></td>
+      <td><img src="Person2.JPG" width="80" height="107" alt=""/></td>
+      <td><img src="Person3.JPG" width="80" height="107" alt=""/></td>
+      <td><img src="Person4.JPG" width="80" height="107" alt=""/></td>
+      <td><img src="person5.JPG" width="80" height="107" alt=""/></td>
+      <td><img src="Person6.JPG" width="80" height="107" alt=""/></td>
+      <td><img src="person7.JPG" width="80" height="107" alt=""/></td>
+    </tr>
+    <tr>
+    <td style="color: #C5B358">Shyanne Waller, Job</td>
+    <td style="color: #C5B358">Miles Scott, Job</td>
+    <td style="color: #C5B358">Lillian Shaw, Job</td>
+    <td style="color: #C5B358">Abigail Graham, Job</td>
+    <td style="color: #C5B358">Jessica Jones,Job</td>
+    <td style="color: #C5B358">Amanda Krom, Job</td>
+    <td style="color: #C5B358">Michael Gill, Job</td>
+    </tr>
+     
+     <tr>
+      <td><img src="person9.JPG" width="80" height="107" alt=""/></td>
+      <td><img src="person10.JPG" width="80" height="107" alt=""/></td>
+      <td><img src="person11.JPG" width="80" height="107" alt=""/></td>
+      <td><img src="person12.JPG" width="80" height="107" alt=""/></td>
+      <td><img src="person13.JPG" width="80" height="107" alt=""/></td>
+      <td><img src="person14.JPG" width="80" height="107" alt=""/></td>
+      <td><img src="person15.JPG" width="80" height="107" alt=""/></td>
+      <td><img src="person16.JPG" width="80" height="107" alt=""/></td>
+    </tr>
+    <tr>
+    <td style="color: #C5B358">Braden Edmunds, Job</td>
+    <td style="color: #C5B358">Ethan Lopez, Job</td>
+    <td style="color: #C5B358">Joshua Dunn, Job</td>
+    <td style="color: #C5B358">Allie Fisher, Job</td>
+    <td style="color: #C5B358">Haven McClure, Job</td>
+    <td style="color: #C5B358">Tim Brown, Job</td>
+    <td style="color: #C5B358">Ben Hale, Job</td>
+    <td style="color: #C5B358">Justine McClimont, Job</td>
+   	</tr>
+  </tbody>
+	</table>
+<footer>
+<hgroup>
+	<p><span style="font-size: 24px"><strong>Hyperlinks</strong></span></p>
+</hgroup>
+<a href="https://fspa.wildapricot.org/"><img src="banner-fspanew.jpg" alt="https://fspa.wildapricot.org/" width="640" height="230"/></a> <a href="http://www.mynews13.com/content/news/cfnews13/sports.html"><img src="Spectrum sports banner.jpg" alt="" width="700" height="232"/></a></footer>
+
+</body>
+
+
+
+</html>

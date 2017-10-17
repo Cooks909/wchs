@@ -1,0 +1,35 @@
+@charset "utf-8";
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+	padding-left: 0px;
+	text-align: center;
+	text-decoration: none;
+	color: #C5B358;
+	text-transform: capitalize;
+	list-style: outside;
+	vertical-align: baseline;
+	border-width: medium;
+}
+center nav ul {
+	width: auto;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	top: auto;
+	clear: none;
+	float: none;
+	visibility: collapse;
+}
+
+body img {
+	text-align: left;
+	float: none;
+	clear: both;
+	opacity: 1;
+
+
+}
